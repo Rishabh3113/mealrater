@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ratings">
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="200dp"
+         android:id="@+id/heading"
+
+         android:text="RATE YOUR MEAL HERE "
+         android:textColor="@color/black"
+         android:gravity="center"
+         android:textSize="23sp"
+         android:textStyle="bold"
+         />
+
+
+      <RatingBar
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:id="@+id/bar"
+
+          android:layout_marginTop="50dp"
+          android:layout_gravity="center"
+          android:numStars="5"
+          android:progressBackgroundTint="@color/teal_200"
+          android:visibility="visible"
+          android:progressTint="@color/black"
+
+          />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+      <com.google.android.material.button.MaterialButton
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_margin="19dp"
+          android:backgroundTint="@color/black"
+          android:text="SAVE"
+          android:textSize="21sp"
+         android:id="@+id/save"
+          app:cornerRadius="9dp"
+          android:textColor="@color/white"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="19dp"
+            android:backgroundTint="@color/black"
+            android:text="CANCEL"
+            android:textSize="21sp"
+            android:id="@+id/cancel"
+            app:cornerRadius="9dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
